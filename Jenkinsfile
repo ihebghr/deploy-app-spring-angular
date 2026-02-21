@@ -8,14 +8,14 @@ pipeline {
 
   stages{
     stage("clean up"){
-	steps {
-	  deleteDir()
-	}
+      steps {
+        deleteDir()
+      }
     }
     stage("clone repo"){
-	steps {
-	sh "git clone https://github.com/NouraneZouabi/deploy-app-spring-angular.git"
-	}
+      steps {
+      sh "git clone https://github.com/NouraneZouabi/deploy-app-spring-angular.git"
+      }
     }
 
   }
